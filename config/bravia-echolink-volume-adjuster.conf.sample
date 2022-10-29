@@ -1,0 +1,51 @@
+[TV]  
+###CHANGE WITH YOUR OWN VALUE###
+tv_ip = 192.168.29.226
+
+###CHANGE WITH YOUR OWN VALUE - EDIT CONFIG AFTER AN INITIAL TV PROMPT WITH A PIN###
+pin = 0000
+
+device_id = volume-adjuster
+
+
+[ALEXA]
+alexa_remote_control_command = ./alexa_remote_control.sh
+
+###CHANGE WITH YOUR OWN VALUE, OR LEAVE DEFAULT###
+amazon = amazon.com
+
+###CHANGE WITH YOUR OWN VALUE, OR LEAVE DEFAULT###
+alexa = alexa.amazon.com
+
+###CHANGE WITH YOUR OWN VALUE###
+email = 
+
+###CHANGE WITH YOUR OWN VALUE -  Use https://github.com/Apollon77/alexa-cookie-cli/ to obtain
+refresh_token =
+
+###CHANGE WITH YOUR OWN VALUE. NOT NEEDED IF USING A REFRESH TOKEN###
+password =
+
+###CHANGE WITH YOUR OWN VALUE. NOT NEEDED IF USING A REFRESH TOKEN###
+mfa_secret = 
+
+###CHANGE WITH YOUR OWN VALUE###
+alexa_device = [your Alexa device name that needs to be volume controlled]
+
+
+
+[LOGGING]  
+file_log_path = ./logs
+file_log_name = bravia-echolink-volume-adjuster.log
+file_log_level = INFO
+console_log_level = INFO
+
+[ADJUSTER]
+polling_interval_sec = 0.5
+exception_sleep_interval_sec = 5
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+[Unit]
+Description = BraviaTV to Amazon EchoLink volume adjuster
+After = network.target 
+
+[Service]
+Type = simple
+WorkingDirectory=/home/dmitriy/bravia-echolink-volume-adjuster/
+ExecStart = bravia-echolink-volume-adjuster.sh
+User = dmitriy
+Group = dmitriy
+Restart = on-failure
+SyslogIdentifier = bravia-echolink-volume-adjuste
+RestartSec = 5
+TimeoutStartSec = infinity
+ 
+[Install]
+WantedBy = multi-user.target
